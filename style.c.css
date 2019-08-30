@@ -1,0 +1,74 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box; 
+}
+
+body{
+    background-image: url('paintings/detailWall.jpg');
+    background-repeat: no-repeat;   
+    background-size: cover;
+}
+
+
+h1{
+    line-height: 15%;
+    margin: 5%;
+    color:rgba(255, 255, 255, 0.507);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
+    left: 10%;
+
+}
+
+.container{
+    width:60%;
+    margin:auto;
+    border: 15px solid rgba(0, 0, 0, 0.267);
+    overflow: hidden;
+    position: relative;
+}
+
+.imageSlider{
+    display:flex; 
+    width:100%;
+    height:600px;
+}
+
+#PrevBtn{
+    all:inherit;
+    background-image: url('paintings/arrowL.png');
+    background-repeat: no-repeat; 
+    height: 160px;
+    width: 160px;
+    position: absolute;
+    top:50%;
+    z-index: 100;
+    left:10%;
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 15%;
+    
+}
+
+
+#NextBtn{
+    all:inherit;
+    background-image: url('paintings/arrowR.png');
+    background-repeat: no-repeat; 
+    height: 160px;
+    width: 160px;
+    position: absolute;
+    top:50%;
+    z-index: 100;
+    right:10%;
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 15%;
+
+}
+
+#PrevBtn:hover, #NextBtn:hover{
+background-color:rgba(255, 255, 255, 0.342);
+}
+
